@@ -1,0 +1,11 @@
+- scenario1
+5 years data with blended method (interpolation + mean imputation), unfilled 15-27 September 2020 
+
+- scenario2 
+5 years data with blended method (interpolation + backward fill + forward fill), unfilled 15-27 September 2020
+
+- scenario2.5 
+5 years data with blended method (interpolation + backward fill + forward fill), filled 15-27 September 2020 with external data
+
+- scenario3
+10 years data + 5 months of 2024 with blended method (interpolation + backward fill + forward fill), unfilled 15-27 September 2020 
