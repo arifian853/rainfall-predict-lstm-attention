@@ -2,12 +2,12 @@ import pandas as pd
 import os
 
 # Define the list of filenames for each month
-months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember']
+months = ['Januari', 'Februari', 'Maret', 'April', 'Mei']
 
 # Directory paths
-input_dir = '../dataset/raw_bmkg/2019/csv'
-output_dir = '../dataset/filled/scenario3/filled_per_year/2019'
-output_file_year = os.path.join(output_dir, '2019-filled.csv')
+input_dir = '../dataset/raw_bmkg/2024/csv'
+output_dir = '../dataset/filled/scenario3/filled_per_year'
+output_file_year = os.path.join(output_dir, '2024-filled.csv')
 
 # Ensure the output directory exists
 os.makedirs(output_dir, exist_ok=True)
@@ -18,7 +18,7 @@ df_list = []
 # Process each month's data file
 for month in months:
     # Construct the filename
-    input_file = os.path.join(input_dir, f'{month}-2019.csv')
+    input_file = os.path.join(input_dir, f'{month}-2024.csv')
     
     # Load the dataset
     df = pd.read_csv(input_file, parse_dates=['Tanggal'], index_col='Tanggal')
@@ -59,7 +59,7 @@ for month in months:
     # Optional: Print the missing data info for verification
     missing_data_before = df.isna().sum()
     missing_data_interpolated = df_interpolated.isna().sum()
-    print(f"{month} 2019:")
+    print(f"{month} 2024:")
     print("Missing data before filling:", missing_data_before)
     print("Missing data after interpolation and additional filling:", missing_data_interpolated)
     print("-" * 50)

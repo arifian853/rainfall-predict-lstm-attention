@@ -5,8 +5,8 @@ import os
 months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember']
 
 # Directory paths
-input_dir = '../dataset/raw_bmkg/2019/csv'
-output_dir = '../dataset/filled/scenario3/filled_per_month/2019'
+input_dir = '../dataset/raw_bmkg/2024/csv'
+output_dir = '../dataset/filled/scenario3/filled_per_month/2024'
 
 # Ensure the output directory exists
 os.makedirs(output_dir, exist_ok=True)
@@ -14,8 +14,8 @@ os.makedirs(output_dir, exist_ok=True)
 # Process each month's data file
 for month in months:
     # Construct the filename
-    input_file = os.path.join(input_dir, f'{month}-2019.csv')
-    output_file = os.path.join(output_dir, f'{month}-2019-filled.csv')
+    input_file = os.path.join(input_dir, f'{month}-2024.csv')
+    output_file = os.path.join(output_dir, f'{month}-2024-filled.csv')
     
     # Load the dataset
     df = pd.read_csv(input_file, parse_dates=['Tanggal'], index_col='Tanggal')
@@ -56,7 +56,7 @@ for month in months:
     # Optional: Print the missing data info for verification
     missing_data_before = df.isna().sum()
     missing_data_interpolated = df_interpolated.isna().sum()
-    print(f"{month} 2019:")
+    print(f"{month} 2024:")
     print("Missing data before filling:", missing_data_before)
     print("Missing data after interpolation and additional filling:", missing_data_interpolated)
     print("-" * 50)
