@@ -56,7 +56,7 @@ Data berupa angka dan arah angin pada variabel ddd_car (Arah angin terbanyak) ya
 - Validation Set: 1 Januari 2022 - 31 Desember 2022
 - Testing Set: 1 Januari 2023 - 31 Desember 2023
 
-Data akan ditambah menjadi jangka 1 Januari 2014 hingga 31 Mei 2024 untuk penambahan variasi data.
+Data akan ditambah menjadi jangka 1 Januari 2010 hingga 31 Mei 2024 untuk penambahan variasi data.
 
 Sumber data : https://dataonline.bmkg.go.id/ [DataOnline BMKG.]
 Stasiun UPT, Provinsi Kepulauan Riau, Kota Batam, 96087 - Stasiun Meteorologi Hang Nadim 
