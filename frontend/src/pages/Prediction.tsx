@@ -31,7 +31,7 @@ export const Prediction = () => {
   const handleSubmit = async (event: { preventDefault: () => void }) => {
     setLoading(true);
     event.preventDefault();
-    const response = await fetch('http://localhost:5000/predict', {
+    const response = await fetch('https://flask-example.1hrnom1bxkr4.us-south.codeengine.appdomain.cloud/predict', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
