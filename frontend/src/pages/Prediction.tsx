@@ -12,7 +12,6 @@ import {
   TableRow,
 } from "@/components/ui/table"
 
-
 export const Prediction = () => {
   const [inputData, setInputData] = useState(Array(10).fill({ Tavg: '', RH_avg: '', ss: '', ff_avg: '' }));
   const [predictions, setPredictions] = useState({ lstm: null, lstm_attention: null });
@@ -31,7 +30,7 @@ export const Prediction = () => {
   const handleSubmit = async (event: { preventDefault: () => void }) => {
     setLoading(true);
     event.preventDefault();
-    const response = await fetch('https://flask-example.1hrnom1bxkr4.us-south.codeengine.appdomain.cloud/predict', {
+    const response = await fetch('http://localhost:5000/predict', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
