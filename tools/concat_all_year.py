@@ -5,13 +5,13 @@ import os
 input_dir = '../dataset/filled/scenario3/filled_per_year'
 
 # Output file path
-output_file_all_years = os.path.join(input_dir, '../final/final-data-2019-2023.csv')
+output_file_all_years = os.path.join(input_dir, '../final/final-data-2010-2024.csv')
 
 # List to hold the yearly DataFrames
 df_list = []
 
 # Loop through the files in the directory
-for year in range(2019, 2024):  # Adjust the range as needed
+for year in range(2010, 2025):  # Adjust the range as needed
     # Construct the filename
     input_file = os.path.join(input_dir, str(year), f'{year}-filled.csv')
     
