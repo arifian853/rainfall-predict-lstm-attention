@@ -9,7 +9,7 @@ function App() {
     <>
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/predict-lstm' element={<Prediction />} />
+        <Route path='/predict' element={<Prediction />} />
       </Routes>
     </>
   )
