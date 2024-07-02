@@ -17,6 +17,7 @@ import { MdFileUpload } from "react-icons/md";
 
 // Default input data
 const defaultInputData = [
+  { Tavg: 28.1, RH_avg: 88, ss: 8.3, ff_avg: 2 },
   { Tavg: 28.7, RH_avg: 83, ss: 4.1, ff_avg: 1 },
   { Tavg: 29.0, RH_avg: 82, ss: 6.0, ff_avg: 2 },
   { Tavg: 28.3, RH_avg: 88, ss: 8.5, ff_avg: 2 },
@@ -25,8 +26,7 @@ const defaultInputData = [
   { Tavg: 28.3, RH_avg: 85, ss: 2.8, ff_avg: 2 },
   { Tavg: 28.3, RH_avg: 87, ss: 4.1, ff_avg: 3 },
   { Tavg: 26.7, RH_avg: 92, ss: 6.2, ff_avg: 2 },
-  { Tavg: 27.2, RH_avg: 94, ss: 0.0, ff_avg: 1 },
-  { Tavg: 26.6, RH_avg: 94, ss: 3.0, ff_avg: 1 }
+  { Tavg: 27.2, RH_avg: 94, ss: 0.0, ff_avg: 1 }
 ];
 
 export const Prediction = () => {
