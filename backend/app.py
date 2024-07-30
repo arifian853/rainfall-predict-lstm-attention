@@ -45,8 +45,8 @@ def predict():
     X = preprocess_input_data(data)
 
     # Make predictions using the models
-    predictions_lstm = model_lstm.signatures['serving_default'](lstm_40_input=tf.constant(X))['dense_16'].numpy()
-    predictions_lstm_attention = model_lstm_attention.signatures['serving_default'](input_9=tf.constant(X))['dense_17'].numpy()
+    predictions_lstm = model_lstm.signatures['serving_default'](lstm_14_input=tf.constant(X))['dense_4'].numpy()
+    predictions_lstm_attention = model_lstm_attention.signatures['serving_default'](input_3=tf.constant(X))['dense_2'].numpy()
 
     # Denormalize predictions
     predictions_lstm_denorm = denormalize_output(predictions_lstm)

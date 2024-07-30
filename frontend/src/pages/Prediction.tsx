@@ -17,16 +17,16 @@ import { MdFileUpload } from "react-icons/md";
 
 // Default input data
 const defaultInputData = [
-  { Tavg: 28.1, RH_avg: 88, ss: 8.3, ff_avg: 2 },
-  { Tavg: 28.7, RH_avg: 83, ss: 4.1, ff_avg: 1 },
-  { Tavg: 29.0, RH_avg: 82, ss: 6.0, ff_avg: 2 },
-  { Tavg: 28.3, RH_avg: 88, ss: 8.5, ff_avg: 2 },
-  { Tavg: 26.8, RH_avg: 93, ss: 5.0, ff_avg: 2 },
-  { Tavg: 28.9, RH_avg: 83, ss: 1.5, ff_avg: 2 },
-  { Tavg: 28.3, RH_avg: 85, ss: 2.8, ff_avg: 2 },
-  { Tavg: 28.3, RH_avg: 87, ss: 4.1, ff_avg: 3 },
-  { Tavg: 26.7, RH_avg: 92, ss: 6.2, ff_avg: 2 },
-  { Tavg: 27.2, RH_avg: 94, ss: 0.0, ff_avg: 1 }
+  { Tavg: 26.0, RH_avg: 93, ss: 1.3, ff_avg: 2 },
+  { Tavg: 26.2, RH_avg: 92, ss: 4.8, ff_avg: 1 },
+  { Tavg: 28.9, RH_avg: 82, ss: 0.9, ff_avg: 2 },
+  { Tavg: 29.2, RH_avg: 80, ss: 6.6, ff_avg: 2 },
+  { Tavg: 29.6, RH_avg: 80, ss: 4.8, ff_avg: 2 },
+  { Tavg: 28.5, RH_avg: 82, ss: 8.1, ff_avg: 2 },
+  { Tavg: 28.0, RH_avg: 87, ss: 6.7, ff_avg: 1 },
+  { Tavg: 28.3, RH_avg: 83, ss: 4.5, ff_avg: 2 },
+  { Tavg: 29.0, RH_avg: 81, ss: 3.4, ff_avg: 3 },
+  { Tavg: 28.6, RH_avg: 84, ss: 4.8, ff_avg: 2 },
 ];
 
 export const Prediction = () => {
@@ -82,17 +82,17 @@ export const Prediction = () => {
     rainfall = parseFloat(rainfall).toFixed(2);
     
     if (rainfall >= 0.1 && rainfall <= 10.0) {
-      return `Hujan Ringan`;
+      return 'Hujan Ringan';
     } else if (rainfall > 10.0 && rainfall <= 50.0) {
-      return `Hujan Sedang`;
+      return 'Hujan Sedang';
     } else if (rainfall > 50.0 && rainfall <= 100.0) {
-      return `Hujan Lebat`;
+      return 'Hujan Lebat';
     } else if (rainfall > 100.0 && rainfall <= 150.0) {
-      return `Hujan Sangat Lebat`;
+      return 'Hujan Sangat Lebat';
     } else if (rainfall > 150.0) {
-      return `Hujan Ekstrem`;
+      return 'Hujan Ekstrem';
     } else {
-      return `Tidak ada hujan/sangat sedikit hujan`;
+      return 'Tidak ada hujan/sangat sedikit hujan';
     }
   };
 

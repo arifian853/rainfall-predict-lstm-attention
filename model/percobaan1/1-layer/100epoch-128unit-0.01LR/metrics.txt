@@ -1,0 +1,8 @@
+R-squared LSTM: [0.00411469]
+MSE LSTM: [0.00697646]
+MAE LSTM: [0.04369324]
+RMSE LSTM : [0.08352523]
+R-squared LSTM with Attention: [-0.07709038]
+MSE LSTM with Attention: [0.00754533]
+MAE LSTM with Attention: [0.05782614]
+RMSE LSTM with Attention: [0.08686385]
