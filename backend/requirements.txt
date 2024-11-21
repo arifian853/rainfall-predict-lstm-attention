@@ -2,3 +2,5 @@ Flask
 flask_cors
 tensorflow
 numpy
+joblib
+scikit-learn
